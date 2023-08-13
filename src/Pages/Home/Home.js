@@ -14,17 +14,17 @@ import Footer from '../Shared/Footer/Footer';
 const Home = () => {
     return (
         <div>
-            <Header/>
+            {/* <Header/> */}
             <Banner/>
             <Specialty/>
             <Gallery/>
-            <Cuisine/>
-            <Stats/>
-            <Reviews/>
-            <ExploreMenu/>
-            <Chefs/>
-            <QuickLinks/>
-            <Footer/>
+            {/* <Cuisine/> */}
+            {/* <Stats/> */}
+            {/* <Reviews/> */}
+            {/* <ExploreMenu/> */}
+            {/* <Chefs/> */}
+            {/* <QuickLinks/> */}
+            {/* <Footer/> */}
         </div>
     );
 };
