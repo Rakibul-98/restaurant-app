@@ -1,9 +1,11 @@
 import './App.css';
+import Home from './Pages/Home/Home';
+import('preline');
 
 function App() {
   return (
-    <div>
-      
+    <div className='app'>
+      <Home/>
     </div>
   );
 }
