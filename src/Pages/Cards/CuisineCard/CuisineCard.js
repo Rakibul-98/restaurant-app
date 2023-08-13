@@ -3,7 +3,7 @@ import React from 'react';
 const CuisineCard = ({cuisine}) => {
 
     return (
-        <div className='cuisine-card border'>
+        <div className='cuisine-card border-2 border-t-0 border-dashed'>
             <div className="card-container md:grid grid-cols-4">
                 <img className='h-full w-full col-span-2' src={cuisine.img} alt={cuisine.id} />
                 <div className="card-text px-5 xl:px-10 col-span-2 pb-5 place-self-center">
