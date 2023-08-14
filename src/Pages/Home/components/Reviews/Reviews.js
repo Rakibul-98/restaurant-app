@@ -26,7 +26,11 @@ const Reviews = () => {
     const style = "h-5 w-5 border-2 border-blue-400 rounded-full mx-1";
 
     return (
-        <div className='w-10/12 mx-auto'>
+        <div className='w-10/12 mx-auto pb-20'>
+            <div className="review-sec-header text-center pb-10">
+                <h3 className='title mb-2'>What Clients Say</h3>
+                <p>Elevating Excellence through Your Voice: Our Restaurant, Your Review</p>
+            </div>
             <ReviewCard review={activeReview}></ReviewCard>
             <div className="action-btn-div flex justify-center py-5">
             {

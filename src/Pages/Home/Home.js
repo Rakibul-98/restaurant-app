@@ -21,7 +21,7 @@ const Home = () => {
             <Cuisine/>
             <Stats/>
             <Reviews/>
-            {/* <ExploreMenu/> */}
+            <ExploreMenu/>
             {/* <Chefs/> */}
             {/* <QuickLinks/> */}
             {/* <Footer/> */}

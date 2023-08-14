@@ -17,13 +17,13 @@ const Stats = () => {
 
     return (
         <div>
-            <div className="w-10/12 mx-auto flex justify-around py-20">
+            <div className="w-11/12 lg:w-9/12 xl:w-8/12 mx-auto grid grid-cols-5 py-20">
                 {
                     statesInfo.map(s =>
                         <div key={s.value} className="stat-card text-center mx-2">
-                            <p className='flex justify-center text-3xl md:text-5xl'>{s.icon}</p>
-                            <p className='text-2xl md:text-4xl font-semibold py-3'><CountUp end={s.value} duration={5} enableScrollSpy={true}></CountUp>+</p>
-                            <p className='text-xs md:text-base'>{s.text}</p>
+                            <p className='flex justify-center text-2xl sm:text-4xl'>{s.icon}</p>
+                            <p className='text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold py-3'><CountUp end={s.value} duration={5} enableScrollSpy={true}></CountUp>+</p>
+                            <p className='text-xs lg:text-base'>{s.text}</p>
                         </div>
                     )
                 }
