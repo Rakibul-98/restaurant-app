@@ -20,7 +20,7 @@ const Home = () => {
             <Gallery/>
             <Cuisine/>
             <Stats/>
-            {/* <Reviews/> */}
+            <Reviews/>
             {/* <ExploreMenu/> */}
             {/* <Chefs/> */}
             {/* <QuickLinks/> */}

@@ -20,10 +20,10 @@ const Stats = () => {
             <div className="w-10/12 mx-auto flex justify-around py-20">
                 {
                     statesInfo.map(s =>
-                        <div key={s.index} className="stat-card text-center">
-                            <p className='flex justify-center text-5xl'>{s.icon}</p>
-                            <p className='text-4xl font-semibold py-3'><CountUp end={s.value} duration={5} enableScrollSpy={true}></CountUp>+</p>
-                            <p>{s.text}</p>
+                        <div key={s.value} className="stat-card text-center mx-2">
+                            <p className='flex justify-center text-3xl md:text-5xl'>{s.icon}</p>
+                            <p className='text-2xl md:text-4xl font-semibold py-3'><CountUp end={s.value} duration={5} enableScrollSpy={true}></CountUp>+</p>
+                            <p className='text-xs md:text-base'>{s.text}</p>
                         </div>
                     )
                 }
