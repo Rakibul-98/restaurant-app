@@ -22,7 +22,7 @@ const Home = () => {
             <Stats/>
             <Reviews/>
             <ExploreMenu/>
-            {/* <Chefs/> */}
+            <Chefs/>
             {/* <QuickLinks/> */}
             {/* <Footer/> */}
         </div>
