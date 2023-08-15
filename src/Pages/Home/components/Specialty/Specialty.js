@@ -7,7 +7,7 @@ const Specialty = () => {
         { id: 2, title: "Seasonal", text: "Experience the changing seasons on your plate with our carefully curated seasonal dishes." },
     ]
     return (
-        <div>
+        <div className='bg-gradient-to-b from-slate-300 to-transparent'>
             <div className="w-10/12 mx-auto md:grid grid-cols-12 gap-10 content-center py-20">
                 <div className="specialty-text-div col-span-7 xl:col-span-8 place-self-center">
                     <small className='font-bold'>— specialty</small>
@@ -25,7 +25,7 @@ const Specialty = () => {
                     </div>
                 </div>
                 <div className="specialty-img-div mt-5 col-span-5 xl:col-span-4 place-self-center">
-                    <img className='lg:h-80' src="https://i.ibb.co/4Vg61bX/signature.jpg" alt="special" />
+                    <img className='rounded-full shadow-xl' src="https://i.ibb.co/fCTt6mG/signature.png" alt="special" />
                 </div>
             </div>
         </div>

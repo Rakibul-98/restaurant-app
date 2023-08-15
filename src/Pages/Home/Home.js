@@ -23,7 +23,7 @@ const Home = () => {
             <Reviews/>
             <ExploreMenu/>
             <Chefs/>
-            {/* <QuickLinks/> */}
+            <QuickLinks/>
             {/* <Footer/> */}
         </div>
     );

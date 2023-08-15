@@ -16,7 +16,7 @@ const Chefs = () => {
                 <h3 className='title'>Chefs</h3>
                 <p>Where Creativity Meets Culinary Artistry</p>
             </div>
-            <div className='grid xl:grid-cols-4 md:grid-cols-2 gap-5 relative mt-28'>
+            <div className='grid xl:grid-cols-4 md:grid-cols-2 gap-5 relative'>
                 {
                     chefs.map(c =>
                         <ChefCard key={c.id} chef={c}></ChefCard>
