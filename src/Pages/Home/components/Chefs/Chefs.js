@@ -11,7 +11,7 @@ const Chefs = () => {
     ]
 
     return (
-        <div className="chef-container w-10/12 mx-auto relative py-20 duration-1000">
+        <div id='chef' className="chef-container w-10/12 mx-auto relative py-20 duration-1000">
             <div className="sec-title-div text-center">
                 <h3 className='title'>Chefs</h3>
                 <p>Where Creativity Meets Culinary Artistry</p>

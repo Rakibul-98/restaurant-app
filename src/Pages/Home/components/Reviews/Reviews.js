@@ -26,7 +26,7 @@ const Reviews = () => {
     const style = "h-5 w-5 border-2 border-lime-600 rounded-full mx-1";
 
     return (
-        <div className='bg-gradient-to-t from-violet-100 to-transparent'>
+        <div id='review' className='bg-gradient-to-t from-violet-100 to-transparent'>
             <div className='w-10/12 mx-auto py-20'>
                 <div className="review-sec-header text-center pb-10">
                     <h3 className='title mb-2'>What Clients Say</h3>

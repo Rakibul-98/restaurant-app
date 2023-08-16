@@ -80,7 +80,7 @@ const Cuisine = () => {
     const style = "py-3 border-b-2 border-lime-400 cursor-pointer";
 
     return (
-        <div className='w-10/12 mx-auto pb-10'>
+        <div id='cuisine' className='w-10/12 mx-auto py-16'>
             <div className="cuisine-title-div text-center pb-10">
                 <h3 className='title pb-3'>Our Cuisines</h3>
                 <p>Where Every Bite Tells a Story</p>

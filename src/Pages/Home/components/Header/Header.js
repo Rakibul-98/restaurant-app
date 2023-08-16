@@ -2,9 +2,20 @@ import React from 'react';
 import NavBar from '../../../Shared/NavBar/NavBar';
 
 const Header = () => {
+
+    const nav = document.getElementById('nav');
+    window.onscroll = function () {
+        if (document.body.scrollTop >= 400 || document.documentElement.scrollTop >= 400) {
+            nav.style.background = "gray";
+        }
+        else {
+            nav.style.background = "transparent";
+        }
+    };
+
     return (
-        <div>
-            <NavBar/>
+        <div className='text-white relative' id='nav'>
+            <NavBar />
         </div>
     );
 };

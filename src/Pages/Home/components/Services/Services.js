@@ -1,5 +1,5 @@
 import React from 'react';
-import ServiceCard from '../../Cards/ServiceCard/ServiceCard';
+import ServiceCard from '../../../Cards/ServiceCard/ServiceCard';
 import { LuCake } from "react-icons/lu";
 import { MdOutlineDiversity1 } from "react-icons/md";
 import { GrCafeteria } from "react-icons/gr";
@@ -14,8 +14,8 @@ const Services = () => {
         { id: 3, icon:<GiStairsCake/>, name: "Wedding Party", text: "Let us bring your dream wedding to life, weaving together moments of joy, love, and celebration that will be cherished for a lifetime." },
     ]
     return (
-        <div className=''>
-            <div className="service-container w-10/12 mx-auto py-10">
+        <div id='service' >
+            <div className="service-container w-10/12 mx-auto py-20">
                 <div className="service-title text-center">
                     <h3 className='title pb-3'>Services</h3>
                     <p>Services we provide</p>

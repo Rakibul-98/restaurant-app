@@ -10,7 +10,7 @@ const Banner = () => {
     }
 
     return (
-        <div className="bg-[url('https://i.ibb.co/G04D7mX/banner-bg.jpg')] bg-no-repeat bg-center bg-cover">
+        <div id='banner' className="bg-[url('https://i.ibb.co/G04D7mX/banner-bg.jpg')] bg-no-repeat bg-center bg-cover">
             <BannerText info={bannerInfo}></BannerText>
         </div>
     );

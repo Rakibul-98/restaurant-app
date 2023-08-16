@@ -7,7 +7,7 @@ const Specialty = () => {
         { id: 2, title: "Seasonal", text: "Experience the changing seasons on your plate with our carefully curated seasonal dishes." },
     ]
     return (
-        <div className='bg-gradient-to-b from-slate-300 to-transparent'>
+        <div id='signature' className='bg-gradient-to-b from-slate-300 to-transparent'>
             <div className="w-10/12 mx-auto md:grid grid-cols-12 gap-10 content-center py-20">
                 <div className="specialty-text-div col-span-7 xl:col-span-8 place-self-center">
                     <small className='font-bold'>— specialty</small>

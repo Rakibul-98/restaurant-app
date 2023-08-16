@@ -8,9 +8,10 @@ const QuickLinks = () => {
             id: 1,
             name: "links",
             link: [
-                { id: 1, name: "Home", path: "/" },
+                { id: 1, name: "Home", path: "#banner" },
                 { id: 2, name: "Signature", path: "#signature" },
                 { id: 3, name: "Gallery", path: "#gallery" },
+                { id: 7, name: "Service", path: "#service" },
                 { id: 4, name: "Reviews", path: "#review" },
                 { id: 5, name: "Cuisine", path: "#cuisine" },
                 { id: 6, name: "Chefs", path: "#chef" },

@@ -71,7 +71,7 @@ const Gallery = () => {
     ]
 
     return (
-        <div className='w-10/12 mx-auto pb-20'>
+        <div id='gallery' className='w-10/12 mx-auto py-20'>
             <div className='gallery-title-div text-center'>
                 <h3 className='title mb-3'>Amazing Gallery</h3>
                 <p>Experience the ambience and the flavours of our restaurant</p>

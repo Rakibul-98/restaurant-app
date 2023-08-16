@@ -10,23 +10,26 @@ import QuickLinks from './components/QuickLinks/QuickLinks';
 import Reviews from './components/Reviews/Reviews';
 import Stats from './components/Stats/Stats';
 import Footer from '../Shared/Footer/Footer';
-import Services from './Services/Services';
+import Services from './components/Services/Services';
 
 const Home = () => {
     return (
-        <div>
-            {/* <Header/> */}
-            <Banner/>
-            <Specialty/>
-            <Gallery/>
-            <Cuisine/>
-            <Services/>
-            <Stats/>
-            <Reviews/>
-            <ExploreMenu/>
-            <Chefs/>
-            <QuickLinks/>
-            <Footer/>
+        <div className='relative'>
+            <div className='sticky top-0 z-50'>
+                <Header />
+            </div>
+            <Banner />
+            <Specialty />
+            <Gallery />
+            <Cuisine />
+            <Services />
+            <Stats />
+            <Reviews />
+            <ExploreMenu />
+            <Chefs />
+            <QuickLinks />
+            <Footer />
+            
         </div>
     );
 };
