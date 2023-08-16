@@ -1,16 +1,22 @@
 import React from 'react';
 
-const CuisineCard = ({cuisine}) => {
+const CuisineCard = ({ cuisine }) => {
 
     return (
-        <div className='cuisine-card border-2 border-t-0 border-dashed'>
-            <div className="card-container md:grid grid-cols-4">
-                <img className='h-full w-full col-span-2' src={cuisine.img} alt={cuisine.id} />
-                <div className="card-text px-5 xl:px-10 col-span-2 pb-5 place-self-center">
-                    <h4 className='text-xl xl:text-2xl font-bold pt-7 text-center md:text-left'>{cuisine.title}</h4>
-                    <p className='text-justify text-sm lg:text-base py-5'>{cuisine.text}</p>
-                    <button className='uppercase px-10 py-2 border-2 border-black hover:bg-black hover:text-white duration-1000'>Explore menu</button>
+        <div className="cuisine-card py-5">
+            <div className="card-text text-center w-10/12 md:w-8/12 xl:w-6/12 mx-auto">
+                    <h4 className='text-2xl font-bold'>{cuisine.title}</h4>
+                    <p className='text-sm text-gray-400 py-5'>{cuisine.text}</p>
                 </div>
+            <div className="items-div grid grid-cols-3 gap-5">
+                {
+                    cuisine.items.map(i =>
+                        <div className="item-card w-full shadow-2xl rounded-lg hover:bg-lime-400 hover:text-white cursor-pointer">
+                            <img className='rounded-t-lg' src={i.img} alt="" />
+                            <p className='text-center uppercase font-bold py-2'>{i.name}</p>
+                        </div>
+                    )
+                }
             </div>
         </div>
     );

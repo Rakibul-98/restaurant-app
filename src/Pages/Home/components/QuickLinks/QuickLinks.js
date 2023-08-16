@@ -1,5 +1,4 @@
 import React from 'react';
-import ContactInfo from './ContactInfo/ContactInfo';
 import Subscribe from './Subscribe/Subscribe';
 
 const QuickLinks = () => {
@@ -22,9 +21,9 @@ const QuickLinks = () => {
             name: "about us",
             link: [
                 { id: 1, name: "Owner", path: "" },
-                { id: 2, name: "About", path: "#" },
                 { id: 4, name: "Contact", path: "#" },
-                { id: 5, name: "Career", path: "#" },
+                { id: 2, name: "FAQ", path: "" },
+                { id: 3, name: "Support", path: "#" },
                 { id: 6, name: "Terms & Service", path: "#" },
             ]
         },
@@ -45,12 +44,12 @@ const QuickLinks = () => {
 
     return (
         <div className='w-10/12 mx-auto'>
-            <div className='contact-container'>
-                <ContactInfo />
-            </div>
             <div className="links-container grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-5 py-10 ">
                 <div className="logo-div w-full text-center lg:text-justify col-span-2 sm:col-span-4 lg:col-span-2 sm:w-7/12  mx-auto">
-                    <img className='h-20 mx-auto lg:mx-0 mb-2' src="https://i.ibb.co/GkTWfnX/fav-2.png" alt="" />
+                    <div className="logo-div relative">
+                    <img className='h-20 mx-auto lg:mx-0 mb-5 hover:scale-125 hover:rotate-[360deg] duration-1000' src="https://i.ibb.co/GkTWfnX/fav-2.png" alt="" />
+                    <p className='absolute -top-5 right-16 sm:right-5 md:right-12 lg:-right-4 xl:right-10 bg-orange-500 text-white py-1 px-3 rounded-e-full rounded-tl-full animate-pulse uppercase'>hover me</p>
+                    </div>
                     <p>Step into a world of flavors where culinary excellence meets warm hospitality.</p>
                 </div>
                 {

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReviewCard from '../../../Cards/ReviewCard/ReviewCard';
 
 const Reviews = () => {
-    const [state, setState] = useState("3");
+    const [state, setState] = useState("1");
 
     const reviews = [
         { id: 1, img: "https://i.ibb.co/hW39wrg/p1.jpg", text: "The ambiance was inviting, and the dishes were bursting with creativity and flavor. From start to finish, each course was a pleasant surprise that left my taste buds dancing.", name: "Glen P. Sharp", value: 5 },
@@ -12,7 +12,7 @@ const Reviews = () => {
         { id: 5, img: "https://i.ibb.co/nCtPH33/p5.jpg", text: "The locally sourced ingredients shine in every bite, and the attentive staff makes you feel like a valued guest. If you're seeking comfort and quality, look no further than this hidden gem.", name: "Travis K. Pendarvis", value: 5 },
     ]
 
-    const [activeReview, setActiveReview] = useState(reviews[2]);
+    const [activeReview, setActiveReview] = useState(reviews[0]);
 
     const handleReview = (id) => {
         setState(id);
@@ -23,23 +23,26 @@ const Reviews = () => {
         })
     }
 
-    const style = "h-5 w-5 border-2 border-blue-400 rounded-full mx-1";
+    const style = "h-5 w-5 border-2 border-lime-600 rounded-full mx-1";
 
     return (
-        <div className='w-10/12 mx-auto pb-20'>
-            <div className="review-sec-header text-center pb-10">
-                <h3 className='title mb-2'>What Clients Say</h3>
-                <p>Elevating Excellence through Your Voice: Our Restaurant, Your Review</p>
-            </div>
-            <ReviewCard review={activeReview}></ReviewCard>
-            <div className="action-btn-div flex justify-center py-5">
-            {
-                reviews.map(r => (
-                    <button key={r.id} onClick={() => handleReview(`${r.id}`)} className={state === `${r.id}` ? `bg-blue-600 ${style}` : `${style}`}></button>
-                ))
-            }
+        <div className='bg-gradient-to-t from-violet-100 to-transparent'>
+            <div className='w-10/12 mx-auto py-20'>
+                <div className="review-sec-header text-center pb-10">
+                    <h3 className='title mb-2'>What Clients Say</h3>
+                    <p>Elevating Excellence through Your Voice: Our Restaurant, Your Review</p>
+                </div>
+                <ReviewCard review={activeReview}></ReviewCard>
+                <div className="action-btn-div flex justify-center py-5">
+                    {
+                        reviews.map(r => (
+                            <button key={r.id} onClick={() => handleReview(`${r.id}`)} className={state === `${r.id}` ? `bg-lime-600 ${style}` : `${style}`}></button>
+                        ))
+                    }
+                </div>
             </div>
         </div>
+
     );
 };
 

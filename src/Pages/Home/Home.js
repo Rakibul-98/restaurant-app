@@ -10,6 +10,7 @@ import QuickLinks from './components/QuickLinks/QuickLinks';
 import Reviews from './components/Reviews/Reviews';
 import Stats from './components/Stats/Stats';
 import Footer from '../Shared/Footer/Footer';
+import Services from './Services/Services';
 
 const Home = () => {
     return (
@@ -19,12 +20,13 @@ const Home = () => {
             <Specialty/>
             <Gallery/>
             <Cuisine/>
+            <Services/>
             <Stats/>
             <Reviews/>
             <ExploreMenu/>
             <Chefs/>
             <QuickLinks/>
-            {/* <Footer/> */}
+            <Footer/>
         </div>
     );
 };
