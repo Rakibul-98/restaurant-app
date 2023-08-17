@@ -35,7 +35,6 @@ const NavBar = () => {
         }
     }
     
-
     const handleActive = (id) =>{
         setState(id);
     }
@@ -43,7 +42,7 @@ const NavBar = () => {
     return (
         <div className='w-10/12 mx-auto -mt-16 uppercase font-semibold'>
             <div id='navbar' className='flex justify-between items-center py-3 relative'>
-                <img className='h-10' src="https://i.ibb.co/GkTWfnX/fav-2.png" alt="" />
+                <a href="/"><img className='h-10 hover:rotate-[720deg] hover:scale-125 duration-500' src="https://i.ibb.co/GkTWfnX/fav-2.png" alt="" /></a>
                 <ul id='large-nav' className='large-nav md:flex hidden'>
                     {
                         navLink.map(nl =>
@@ -52,8 +51,8 @@ const NavBar = () => {
                     }
                 </ul>
                 <div className='md:hidden'>
-                    <button className='text-3xl duration-500' onClick={handleMenu}>
-                        <span id='open'><FaBurger /></span>
+                    <button className='text-3xl hover:text-lime-300' onClick={handleMenu}>
+                        <p id='open' className='animate-bounce hover:animate-none'><FaBurger /></p>
                         <span style={{ display: "none" }} id='close' ><MdOutlineRestaurantMenu /></span>
                     </button>
 
