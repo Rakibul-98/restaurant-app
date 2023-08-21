@@ -46,7 +46,7 @@ const NavBar = () => {
                 <ul id='large-nav' className='large-nav md:flex hidden'>
                     {
                         navLink.map(nl =>
-                            <li onClick={()=>handleActive(`${nl.id}`)} className={state === `${nl.id}` ? `text-lime-400 border-b-2 border-lime-400` : ``} key={nl.id}><a className='md:mx-3 xl:mx-6' href={nl.path}>{nl.name}</a></li>
+                            <li className={state === `${nl.id}` ? `text-lime-400 border-b-2 border-lime-400 ` : `hover:text-lime-400`} key={nl.id}><a onClick={()=>handleActive(`${nl.id}`)} className='md:mx-3 xl:mx-6' href={nl.path}>{nl.name}</a></li>
                         )
                     }
                 </ul>
@@ -56,10 +56,10 @@ const NavBar = () => {
                         <span style={{ display: "none" }} id='close' ><MdOutlineRestaurantMenu /></span>
                     </button>
 
-                    <ul id='small-nav' style={{ display: "none" }} className='absolute -right-10 text-center top-16 bg-slate-500 w-6/12 rounded-b-lg'>
+                    <ul id='small-nav' style={{ display: "none" }} className='absolute -right-10 text-center top-16 bg-slate-500 w-6/12 rounded-lg'>
                         {
                             navLink.map(nl =>
-                                <li className={state === `${nl.id}` ? `text-lime-400 m-2` : `text-white m-2`} onClick={()=>handleActive(`${nl.id}`)}  key={nl.id}><a href={nl.path}>{nl.name}</a></li>
+                                <li className={state === `${nl.id}` ? `text-lime-400 m-2` : `text-white m-2 hover:text-lime-400`}   key={nl.id}><a onClick={()=>handleActive(`${nl.id}`)} href={nl.path}>{nl.name}</a></li>
                             )
                         }
                     </ul>
